@@ -1,0 +1,303 @@
+@font-face{
+    font-family: myFont1;
+    src:url(Disket-Mono-Bold.ttf);
+}
+
+@font-face{
+    font-family: myFont2;
+    src:url(Disket-Mono-Regular.ttf);
+}
+
+
+html{
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    padding: 0;
+    margin: 0;
+    min-height: 100%;
+}
+
+body{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    margin-top: 5vmin;
+    color: white;
+}
+
+
+/* .container-content{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 500px;
+    margin-top: 20vmin;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white
+} */
+
+h1{
+    font-family: myFont1;
+    font-size: 48px;
+}
+
+
+/* NAVIGATION BAR */
+
+.navigation__bar ul {
+    padding: 0px 20px; /* Adjust the padding as needed */
+}
+
+.navigation__bar ul li{
+    display: inline-block;
+}
+
+
+
+.navigation__bar ul li a{
+    text-decoration: none;
+    font-size: 12px;
+    color: #E4DEDE;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    margin-top: 16px;
+}
+
+
+
+.navigation__bar{
+    font-family: 'Inter';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+    border-radius: 10px;
+    border: 0.5px solid #454343;
+    background-color: #101010;
+    width: 300px;
+    text-align: center;
+    height: 80px;
+    
+}
+
+
+/* USER PROFILE BUTTON */
+
+.icon{
+    width: 38px;
+    height: 38px;
+    color: white;
+}
+
+
+/* REFRESH BUTTON */
+
+.refresh{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background: #FDF9F9;
+    box-shadow: 0 0 10px 0 hsla(0, 50%, 98%, 0.25); /* Glowing effect with HSL color */
+    border-radius: 50%; 
+    width: 80px;
+    height: 80px;
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+.refresh__icon{
+    width: 50px;
+    height: 50px; 
+}
+
+
+
+/* V2 LIKES -- HEART BUTTON */
+.likeButton__container {
+    margin-top: 40px;
+    width: 50px; /* Adjust the size of the circular background */
+    height: 50px; /* Adjust the size of the circular background */
+    border-radius: 50%; /* Make it a circle */
+    background-color: #454343; /* Set the background color for the circle */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.2s ease; /* Adding transition for smooth hover effect */
+}
+
+#heart {
+  cursor: pointer;
+  background-color: white;
+  border: none;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  transform: rotate(-45deg) scale(0.25);
+
+
+}
+
+#heart::before,
+#heart::after {
+  content: '';
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+
+
+}
+
+#heart::before {
+  top: -25px;
+  left: 0;
+}
+
+#heart::after {
+  top: 0;
+  left: 25px;
+}
+
+.likeButton__container:hover  {
+  background-color: grey; /* Change the background color on hover */
+}
+
+.likeButton__container.clicked {
+  background-color: #BC2020;
+}
+
+
+ /* .likeButton__container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-top: 50px;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    /* background-color: #454343; 
+
+} */
+
+/* V1 LIKES -- HEART BUTTON */
+
+
+/* .heart__icon{
+    width: 20px;
+    height: 20px;
+
+}  */
+
+
+/* HOVER INT */
+
+/* .likes:hover{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-top: 50px;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    background-color: #FCD8D8;
+
+}
+
+.heart__icon:hover{
+    width: 20px;
+    height: 20px;
+    color: red;
+} */
+
+
+
+/* COLOR TRIO */
+
+.color-samples{
+    margin-top: 0px;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+
+.color-sample__swatch {
+    display: block;
+    /* width: 10vmin; */
+    width: 150px;
+    height: 150px;
+    aspect-ratio: 1;
+    background: var(--currentColor, aqua);
+    border-radius: 50%;
+    margin-right: -20px; /* Adjust the negative margin to control the overlap */
+
+
+    /* box-shadow: 0 0 0 .5vmin var(--background); */
+  }
+  
+  .color-sample__value {
+    display: block;
+    font-size: 1.5vmin;
+    font-family: myFont2;
+    text-align: center;
+    width: 8vmin;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-top: 20px;
+    margin-left: 45px;
+    
+
+  }
+
+/* .circle1{
+    border-radius: 50%;
+    margin-right: -15px;
+    height: 150px;
+    width: 150px;
+    background-color: #FF9292;
+}
+
+
+
+.circle2{
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    background-color: #E48282;
+}
+
+
+.circle3{
+    border-radius: 50%;
+    margin-left: -15px;
+    height: 150px;
+    width: 150px;
+    background-color: #E72D2D;
+} */
+

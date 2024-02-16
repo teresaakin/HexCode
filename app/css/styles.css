@@ -1,0 +1,220 @@
+html{
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+
+}
+
+
+body{
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+@font-face{
+    font-family: myFont1;
+    src:url(Disket-Mono-Bold.ttf);
+}
+
+@font-face{
+    font-family: myFont2;
+    src:url(Disket-Mono-Regular.ttf);
+}
+
+
+.hero-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    margin: 0;
+}
+
+
+h3, p{
+    font-family: myFont2;
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: 4px;
+   
+}
+
+p{
+    margin-top: 4px;
+}
+
+
+/* HEX HEADING + GRADIENT ANIMATION */
+
+
+
+h1{
+    font-family: myFont1;
+    font-size: 140px;
+    margin: 0;
+
+    /* GRADIENT ANIMATION */
+
+    background: linear-gradient(135deg, #ffff, #add9de, #67e2bd, #d5c3e7,#e2b2d8, #f9d2ab, #35b4e4);
+    background-size: 300% 300%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate 10s ease-in-out infinite;
+    /* animation-duration: 4s; */
+
+
+
+}
+
+@keyframes animate {
+  0% {
+      background-position: 0%;
+  }
+  50% {
+    background-position: 100%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+
+
+h6{
+    font-family: myFont2;
+    font-size: 16px;
+    font-weight: normal;
+    margin-top: 10px;
+}
+
+.create-btn{
+    font-family: myFont1;
+    background-color: #6FC3F7;
+    border: none;
+    color: black;
+    padding: 18px 30px;
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 53px;
+    transition-duration: 0.3s;
+    border: 2px solid #97B9F7;
+
+}
+
+.create-btn:hover {
+  background-color: black;
+  color: #6FC3F7;
+  border: 2px solid #97B9F7;
+
+}
+
+.login-btn{
+    margin-left: 16px;
+    font-family: myFont1;
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 18px 30px;
+    border-radius: 8px;
+    border: 2px solid white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-bottom: 53px;
+    cursor: pointer; /* Add this line to set the cursor to a pointer */
+
+}
+
+
+
+.login-btn:hover {
+  border: 2px solid #97B9F7;
+
+}
+
+
+
+.modal{
+  padding: 1em;
+  max-width: 50ch;
+  width: 60%; /* Adjust the width to your desired value */
+  max-width: 480px; /* Set a max-width if needed */
+  height: 60vh; /* Adjust the height to your desired value */
+  max-height: 300px; /* Set a max-height if needed */
+  border: 0;
+  box-shadow: 0 0 1em rgb(0 0 0 /.3);
+}
+
+
+.modal {
+  text-align: center;
+  border-radius: 10px;
+}
+
+.modal::backdrop {
+  background: rgb(0 0 0 / .8);
+}
+  
+
+  .modal .close-btn{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #101010;
+    
+  }
+  
+  .modal .close-btn:hover{
+    color: #6FC3F7;
+  }
+  
+
+  .popup-h1{
+    margin-top: 40px;
+    font-family: myFont1;
+    font-weight: bold;
+    font-size: 44px;
+  }
+  
+
+  .popup-h2{
+    font-family: myFont1;
+    font-weight: bold;
+    font-size: 22px;
+    margin-top: 16px;
+  }
+  
+  .popup-p{
+    font-family: myFont2;
+    font-weight: lighter;
+    font-size: 12px;
+    margin-top: 24px;
+  }
+  
+  .google-login-btn{
+    margin-top: 52px;
+  }
+  
+
+  /*
+  GENERATOR.HTML STYLING
+  */
+
+
+  

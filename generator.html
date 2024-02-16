@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>HEX</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <link rel="stylesheet" href="app/css/generator-styling.css">
+    <script src="https://cdn.jsdelivr.net/npm/tinycolor2@1.4.1/dist/tinycolor-min.js"></script>
+    <script src="api.js"></script>
+    <script src="app/js/index.js"></script>
+
+
+</head>    
+
+
+<body> 
+
+<div class="container">
+    <div class="container-content">
+        <h1 class="title" data-title>Palette Title</h1>
+        <!-- <ol class="color-samples">
+            <li class="circle1">Color1</li>
+            <li class="circle2">Color2</li>
+            <li class="circle3">Color3</li>
+        </ol> -->
+
+        <ol class="color-samples" data-colors>
+            <!-- <li>
+                <div class="color-sample__swatch"></div>
+                <span class="color-sample__value">Color 1</span>
+            </li>
+            <li>
+                <div class="color-sample__swatch"></div>
+                <span class="color-sample__value">Color 2</span>
+            </li>
+            <li>
+                <div class="color-sample__swatch"></div>
+                <span class="color-sample__value">Color 3</span>
+            </li> -->
+        </ol>
+
+        <div class ="likeButton__container" id="likeButtonContainer">
+            <button class="heart-btn" id="heart"></button>
+            <!-- <img class="heart__icon" src="/images/heart-icon.svg" alt="Heart Icon"> -->
+        </div>
+
+        <!--BOTTOM NAV BAR-->
+        <nav>
+            <div class="navigation__bar">
+                <ul>
+                    <li><a href="#logout">
+                        <img class="icon" src="/images/profile-icon.svg" alt="Profile Icon">
+                        <span>Profile</span>
+                        
+                        </a></li>
+                    <li>
+                        <div class="refresh" data-randombtn class="controls__button">
+                            <img class="refresh__icon" src="/images/refresh-icon.svg" alt="Refresh Icon" >
+                        </div> 
+                    </li>
+                    <li><a href="likes.html">
+                        <img class="icon" src="/images/heart-icon.svg" alt="Heart Icon">
+                        <span>Likes</span>
+
+                    </a></li>
+                </ul>
+            </div>
+        </nav>
+    </div> 
+</div>
+
+</body>
+
+</html>
