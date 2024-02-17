@@ -191,14 +191,14 @@ likeButtonContainer.addEventListener('click', function() {
 
 // code for displaying liked palettes onto likes.html
 
-const $x = document.querySelector('[data-allLikedPalettes]');
-const $y = document.querySelector('[data-paletteContainer]');
+// const $title = document.querySelector('[data-title]');
+// const $samples = document.querySelector('[data-colors]');
 
 
 
 const savedPalettes = new Map();
-savedPalettes.set('[data-title]', ['data-colors']); 
-savedPalettes.get('[data-title]')
+savedPalettes.set($title.textContent, hexColors); 
+savedPalettes.get($title.textContent)
 
 console.log(savedPalettes);
 
