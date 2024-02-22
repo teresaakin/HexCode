@@ -1,62 +1,9 @@
-html{
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
-
+.liked-palettes {
+  padding: 0 93px;
+  padding-top: 126px;
 }
 
-
-body{
-    background-color: black;
-    color: white;
-    margin: 0;
-    padding: 0;
-    display: flex; 
-    align-items: center; /* Center vertically */
-    justify-content: center; /* Center horizontally */
-    
-}
-
-* {
-  box-sizing: border-box;
-}
-
-
-@font-face{
-    font-family: myFont1;
-    src:url(Disket-Mono-Bold.ttf);
-}
-
-@font-face{
-    font-family: myFont2;
-    src:url(Disket-Mono-Regular.ttf);
-}
-
-
-
-.allLikedPalettes {
-    margin-top: 50px;
-    width: 1000px; /* Adjust the width as needed */
-    height: 400px; /* Adjust the height as needed */
-    background-color: #151414; /* Set the background color of the rectangular box */
-    border: 1px solid hotpink; /* Add a border for better visibility */
-    padding: 10px; /* Add padding for better visibility */
-    border-radius: 10px;
-    /* display: flex;
-    flex-direction: row; */
-    /* flex-wrap: wrap; */
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 12px; /* Adjust as needed for spacing between boxes */
-
-}
-
-
-.paletteContainer {
-    margin: 12px;
-    /* width: 350px;
-    height: 150px;  */
-    background-color: burlywood; /* Set the background color of the rectangular box */
-    border-radius: 6px;
-
+.liked-palettes__wrapper {
+  padding: 36px 42px;
+  border-radius: 8px;
 }
