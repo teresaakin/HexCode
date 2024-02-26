@@ -6,4 +6,8 @@
 .liked-palettes__wrapper {
   padding: 36px 42px;
   border-radius: 8px;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
 }
