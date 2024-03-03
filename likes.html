@@ -5,53 +5,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
-    <link rel="stylesheet" href="/app/css/likes-styling.css">
-    <script src="https://cdn.jsdelivr.net/npm/tinycolor2@1.4.1/dist/tinycolor-min.js"></script>
-    <script src="index.js"></script>
+    <link rel="stylesheet" href="./app/css/global.css"/>
+    <link rel="stylesheet" href="/app/css/likes-styling.css"/>
 
-
-
+    <script src="https://cdn.jsdelivr.net/npm/tinycolor2@1.4.1/dist/tinycolor-min.js" defer></script>
+    <script src="/app/js/index.js" defer></script>
+    <script src="./app/js/likes.js" defer></script>
 </head>
 
 <body>
     <!--Container for liked palettes-->
-    <div class="allLikedPalettes" data-allLikedPalettes>
-    <!--Palette content container-->
-        <div class="paletteContainer" data-paletteContainer>
-            Box 1
-        </div>
-        <div class="paletteContainer">
-            Box 2
+    <div class="liked-palettes" data-liked-palettes>
+      <div class="liked-palettes__wrapper">
+        <!-- dummy palettes -->
+        <!-- <div class="palette"></div>
+        <div class="palette"></div>
+        <div class="palette"></div> -->
 
-        </div>
-        <div class="paletteContainer">
-            Box 3
-
-
-        </div>
-        <div class="paletteContainer">
-            Box 4
-
-        </div>
-        <div class="paletteContainer">
-            Box 5
-
-        </div>
-        <div class="paletteContainer">
-            Box 6
-
-        </div>
-        
-        
+      </div>
     </div>
-
-
-
-
+    <nav>
+      <div class="navigation__bar">
+        <ul>
+          <li>
+            <a href="#logout">
+              <img class="icon" src="/images/profile-icon.svg" alt="Profile Icon">
+              <span>Profile</span> 
+            </a>
+          </li>
+          <li>
+            <div class="refresh" data-randombtn class="controls__button">
+              <img class="refresh__icon" src="/images/refresh-icon.svg" alt="Refresh Icon" >
+            </div> 
+          </li>
+          <li>
+            <a href="likes.html">
+              <img class="icon" src="/images/heart-icon.svg" alt="Heart Icon">
+              <span>Likes</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 </body>
-
-
-
-
-
 </html>
