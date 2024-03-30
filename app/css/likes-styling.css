@@ -1,13 +1,51 @@
 .liked-palettes {
   padding: 0 93px;
   padding-top: 126px;
+  background-color: red;
 }
 
 .liked-palettes__wrapper {
   padding: 36px 42px;
   border-radius: 8px;
-
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  background-color: blue;
+}
+
+
+.card {
+  height: 160px;
+  border-radius: 6px;
+  background-color: #0F0E0E;
+
+}
+
+/* trio container it looks like*/
+.palette {
+  display: flex;
+  justify-content: center; /* Horizontally center the items */
+  align-items: center; /* Vertically center the items */
+  height: 50%;
+}
+
+
+h3 {
+  font-family: myFont2;
+  font-size: 16px;
+  color: white;
+  margin-top: 50px;
+  margin-left: 20px;
+
+}
+
+/* each individual swatch */
+.color-block {
+  margin-top: 80px;
+  display: block;
+  width: 60px; /* Adjust as needed */
+  height: 60px; /* Adjust as needed */
+  border-radius: 50%; /* Makes the color block circular */
+  margin-right: -20px; /* Adjust the negative margin to control the overlap */
+
 }
