@@ -30,7 +30,6 @@ body {
     justify-content: center;
     margin-top: 80px;
     border-radius: 10px;
-    border: 0.5px solid #454343;
     background-color: #101010;
     width: 300px;
     text-align: center;
@@ -55,6 +54,7 @@ body {
 .navigation__bar ul li a{
     text-decoration: none;
     font-size: 12px;
+    font-weight: bold;
     color: #E4DEDE;
     display: flex;
     flex-direction: column;
@@ -92,3 +92,5 @@ body {
     width: 50px;
     height: 50px; 
 }
+
+

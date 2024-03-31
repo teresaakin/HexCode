@@ -49,6 +49,23 @@ function renderFavs() {
       // Append title to card
       card.appendChild(paletteTitle);
 
+
+      // to get like button on the cards only if they are clicked (make them also red)
+
+      // Create heart icon container
+      const heartContainer = document.createElement('div');
+      heartContainer.classList.add('likeButton__container');
+
+      // Create heart icon
+      const heartIcon = document.createElement('div');
+      heartIcon.id = 'heart';
+
+      // Append heart icon to container
+  
+      heartContainer.appendChild(heartIcon);
+
+      card.appendChild(heartContainer);
+
   
   
 

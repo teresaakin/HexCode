@@ -1,7 +1,7 @@
 .liked-palettes {
-  padding: 0 93px;
-  padding-top: 126px;
-  background-color: red;
+  padding: 0 100px;
+  padding-top: 50px;
+  /*background-color: red; for testing purposes*/
 }
 
 .liked-palettes__wrapper {
@@ -10,7 +10,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
-  background-color: blue;
+  /* background-color: yellow; /* for testing purposes*/
 }
 
 
@@ -48,4 +48,60 @@ h3 {
   border-radius: 50%; /* Makes the color block circular */
   margin-right: -20px; /* Adjust the negative margin to control the overlap */
 
+}
+
+
+/* V2 LIKES -- HEART BUTTON */
+.likeButton__container {
+  width: 50px; /* Adjust the size of the circular background */
+  height: 50px; /* Adjust the size of the circular background */
+  border-radius: 50%; /* Make it a circle */
+  background-color: #454343; /* Set the background color for the circle */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.2s ease; /* Adding transition for smooth hover effect */
+}
+
+#heart {
+cursor: pointer;
+background-color: white;
+border: none;
+width: 50px;
+height: 50px;
+position: relative;
+transform: rotate(-45deg) scale(0.25);
+
+
+}
+
+#heart::before,
+#heart::after {
+content: '';
+background-color: white;
+border-radius: 50%;
+position: absolute;
+width: 50px;
+height: 50px;
+
+
+}
+
+#heart::before {
+top: -25px;
+left: 0;
+}
+
+#heart::after {
+top: 0;
+left: 25px;
+}
+
+.likeButton__container:hover  {
+background-color: grey; /* Change the background color on hover */
+}
+
+.likeButton__container.clicked {
+background-color: #BC2020;
 }
