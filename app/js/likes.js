@@ -4,7 +4,7 @@ function renderFavs() {
   console.log(favs)
 
   if (favs.length > 0) {
-    const palettes = document.querySelector('.liked-palettes__wrapper')
+    const palettes = document.querySelector('.liked-palettes__wrapper');
 
     favs.forEach(fav => {
       //main card 
