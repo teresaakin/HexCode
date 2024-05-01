@@ -105,3 +105,8 @@ background-color: grey; /* Change the background color on hover */
 .likeButton__container.clicked {
 background-color: #BC2020;
 }
+
+.likeButton__container {
+  margin-top: -150px;
+  margin-left: 260px;
+}

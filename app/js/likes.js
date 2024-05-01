@@ -60,14 +60,45 @@ function renderFavs() {
       const heartIcon = document.createElement('div');
       heartIcon.id = 'heart';
 
+      // Add 'clicked' class to make the heart icon red
+      heartContainer.classList.add('clicked');
+
       // Append heart icon to container
-  
       heartContainer.appendChild(heartIcon);
 
+      // append heart container to card
       card.appendChild(heartContainer);
+ 
+      // heart button toggle - basically to remove from likes page
+      
+      // the purpose of this function is to update the changes made on the favs array
+      function saveFavs(favs) {
+        localStorage.setItem('favs', JSON.stringify(favs));
+      }
 
-  
-  
+      heartContainer.addEventListener('click', () => {
+        // remove the liked palette from likes page
+        heartContainer.classList.toggle('clicked');
+
+        // if the palette is unliked, remove it from the DOM
+        if (!heartContainer.classList.contains('clicked')) {
+          palettes.removeChild(card);
+
+          // remove the palette from the favs array
+          const index = favs.indexOf(fav);
+          if (index > -1) {
+            favs.splice(index, 1);
+
+            console.log('updated favs array:', favs);
+            saveFavs(favs);
+            console.log('saved favs array to local storage:',JSON.parse(localStorage.getItem('favs')));
+          }
+        }
+
+      });
+
+      palettes.appendChild(card);
+
 
     })
   }
