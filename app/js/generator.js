@@ -56,6 +56,8 @@ function renderPalette() {
     swatch_title.classList.add('color-sample__value')
 
     el.style.setProperty('--current-color', color)
+    swatch_title.textContent = tinycolor(color).toHexString()  // Set the hex value text
+
 
     el.appendChild(swatch)
     el.appendChild(swatch_title)

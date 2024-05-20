@@ -9,7 +9,7 @@
 }
 
 
-html{
+html {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
@@ -23,7 +23,7 @@ body {
 }
 
 /* global navigation */
-.navigation__bar{
+.navigation__bar {
     font-family: 'Inter';
     display: flex;
     align-items: center;
@@ -31,9 +31,9 @@ body {
     margin-top: 80px;
     border-radius: 10px;
     background-color: #101010;
-    width: 300px;
+    width: 280px; /* 300 */
     text-align: center;
-    height: 80px;
+    height: 70px; /* 80 */
 
     /* position the nav at the bottom of the page */
     position: fixed;
@@ -44,7 +44,7 @@ body {
 }
 
 .navigation__bar ul {
-    padding: 0px 20px; /* Adjust the padding as needed */
+    padding: 0px 10px; /* Adjust the padding as needed 0 20 */
 }
 
 .navigation__bar ul li{
@@ -61,15 +61,15 @@ body {
     align-items: center;
     text-align: center;
     padding: 20px;
-    margin-top: 16px;
+    margin-top: 26px; /* 16 */
 }
 
 
 /* USER PROFILE BUTTON */
 
-.icon{
-    width: 38px;
-    height: 38px;
+.icon {
+    width: 30px; /* 38 */
+    height: 30px; /* 38 */
     color: white;
 }
 
@@ -89,8 +89,14 @@ body {
 }
 
 .refresh__icon{
-    width: 50px;
-    height: 50px; 
+    width: 50px; /* 50 */
+    height: 50px; /* 50 */
 }
 
 
+/* Media query for iPhones and other small screens */
+@media screen and (max-width: 768px) {
+
+
+
+}
