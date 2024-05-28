@@ -110,3 +110,22 @@ background-color: #BC2020;
   margin-top: -150px;
   margin-left: 260px;
 }
+
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .liked-palettes {
+    padding: 0 20px;
+    padding-top: 20px;
+
+  }
+
+  .liked-palettes__wrapper {
+    grid-template-columns: 1fr; /* Change to single column layout */
+    gap: 20px; /* Adjust the gap between items as needed */
+  }
+
+  .likeButton__container {
+    margin-right: 10px; /* Center horizontally */
+  }
+}
