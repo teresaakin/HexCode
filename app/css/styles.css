@@ -217,4 +217,13 @@ h6{
   */
 
 
+
+  /* Media query for iPhones and other small screens */
+@media screen and (max-width: 768px) {
+
+
+
+}
+
+
   
