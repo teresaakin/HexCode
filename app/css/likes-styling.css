@@ -114,11 +114,15 @@ background-color: #BC2020;
 
 /* Media query for smaller screens */
 @media (max-width: 768px) {
+
   .liked-palettes {
+    display: flex;
+    flex-direction: column;
     padding: 0 20px;
     padding-top: 20px;
     max-height: 380px;
     overflow-y: auto;
+    overflow-x: hidden;
     /* Add padding at the bottom to avoid overlap with the navigation bar */
     margin-top: 30px;
     justify-content: center;
@@ -131,10 +135,11 @@ background-color: #BC2020;
     grid-template-columns: 1fr; /* Change to single column layout */
     gap: 20px; /* Adjust the gap between items as needed */
 
-
   }
 
   .likeButton__container {
     margin-right: 10px; /* Center horizontally */
   }
+
+
 }

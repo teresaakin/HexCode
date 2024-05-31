@@ -217,6 +217,7 @@ h1 {
 
 /* Media query for iPhones and other small screens */
 @media screen and (max-width: 768px) {
+  /* to fix some spacing/layout issues, I manually fixed the margins */
 
   body {
     display: flex;
@@ -230,6 +231,7 @@ h1 {
     font-family: myFont1;
     font-size: 28px;
     margin-bottom: 50px;
+    width: fit-content; /* not sure if this is good */
 }
   
   .container-content{
@@ -237,9 +239,14 @@ h1 {
     flex-direction: column;
     justify-content: center;
     margin: 0;
-    margin-top: 10vmin;
+    margin-top: 80px;
     color: white;
 }
+
+  .color-samples {
+    margin-right: 12px;
+
+  }
 
   .color-sample__swatch {
     display: block;
@@ -268,6 +275,10 @@ h1 {
     margin-left: 35px;
     
 
+  }
+
+  .likeButton__container {
+    margin-left: 8px;
   }
 
 
